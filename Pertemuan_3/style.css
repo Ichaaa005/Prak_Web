@@ -1,0 +1,296 @@
+/* =========================
+   Reset
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   Body
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4ee;
+    color: #342c28;
+    line-height: 1.6;
+    max-width: 900px;
+}
+
+/* =========================
+   Header
+========================= */
+body > header {
+    background-color: #3d2c29;
+    padding: 25px 20px;
+    border-bottom: 4px solid #c99a55;
+}
+
+body > header h1 {
+    max-width: 900px;
+    margin: 0 auto 15px;
+    color: #f0d6a8;
+    font-size: 30px;
+}
+
+/* =========================
+   Navigation
+========================= */
+nav {
+    max-width: 900px;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 12px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #c99a55;
+    color: #3d2c29;
+}
+
+/* =========================
+   Main
+========================= */
+main {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+/* =========================
+   Section
+========================= */
+section {
+    padding: 30px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e8ded2;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(61, 44, 41, 0.06);
+}
+
+/* =========================
+   Gambar
+========================= */
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* =========================
+   Judul
+========================= */
+h2 {
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    color: #3d2c29;
+    border-bottom: 3px solid #c99a55;
+}
+
+h3 {
+    margin-bottom: 8px;
+    color: #684a38;
+}
+
+/* Judul Tentang Saya */
+.about {
+    color: #3d2c29;
+}
+
+/* =========================
+   Project
+========================= */
+#project {
+    margin-top: 30px;
+}
+
+article {
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #fcfaf7;
+    border: 1px solid #e8ded2;
+    border-left: 4px solid #c99a55;
+    border-radius: 6px;
+}
+
+article:last-child {
+    margin-bottom: 0;
+}
+
+article ul {
+    padding-left: 25px;
+}
+
+article li {
+    padding: 3px 0;
+    color: #655850;
+}
+
+article li::marker {
+    color: #c99a55;
+}
+
+/* =========================
+   Form
+========================= */
+form {
+    margin-top: 20px;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #3d2c29;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d8cabe;
+    border-radius: 5px;
+    background-color: #fffdf9;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #c99a55;
+    border-color: #c99a55;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Tombol */
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3d2c29;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="reset"] {
+    background-color: #8c8178;
+}
+
+button:hover {
+    background-color: #c99a55;
+    color: #3d2c29;
+}
+
+/* =========================
+   Aside
+========================= */
+aside {
+    max-width: 860px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-left: 5px solid #c99a55;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(61, 44, 41, 0.06);
+}
+
+aside h3 {
+    color: #3d2c29;
+}
+
+aside p {
+    color: #80643f;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+    margin-top: 40px;
+    padding: 25px 20px;
+    background-color: #3d2c29;
+    border-top: 3px solid #c99a55;
+    text-align: center;
+    color: #f0d6a8;
+    font-size: 14px;
+}
+
+/* =========================
+   Garis Horizontal
+========================= */
+hr {
+    display: none;
+}
+
+/* =========================
+   Tampilan HP
+========================= */
+@media (max-width: 700px) {
+    body > header {
+        padding: 20px 15px;
+    }
+
+    body > header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    aside {
+        margin: 25px 15px;
+        padding: 20px;
+    }
+}
