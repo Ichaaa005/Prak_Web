@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Saya</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="project.js" defer></script>
+</head>
+<body>
+    <header class="page-header">
+        <a class="back-link" href="index.html">← Kembali ke Beranda</a>
+        <h1>Project Saya</h1>
+        <p>Daftar proyek dan pengelolaannya</p>
+    </header>
+
+    <main class="container">
+        <section class="stats-grid" aria-label="Statistik proyek">
+            <article class="stat-card">
+                <h2>Total Proyek</h2>
+                <p id="stat-total-projects">0</p>
+            </article>
+            <article class="stat-card">
+                <h2>Total Anggaran</h2>
+                <p id="stat-total-budget">Rp0</p>
+            </article>
+            <article class="stat-card">
+                <h2>Proyek Selesai</h2>
+                <p id="stat-completed-projects">0</p>
+            </article>
+        </section>
+
+        <section class="panel">
+            <h2>Tambah Proyek Baru</h2>
+            <form id="project-form">
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="project-title">Judul Proyek</label>
+                        <input type="text" id="project-title" name="title" required
+                               placeholder="Contoh: Website Toko Online">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="project-category">Kategori</label>
+                        <select id="project-category" name="category" required>
+                            <option value="">Pilih kategori</option>
+                            <option value="Web App">Web App</option>
+                            <option value="Mobile App">Mobile App</option>
+                            <option value="Desktop App">Desktop App</option>
+                            <option value="UI/UX Design">UI/UX Design</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="project-budget">Estimasi Anggaran (Rp)</label>
+                        <input type="number" id="project-budget" name="budget"
+                               min="1" step="1" required placeholder="Contoh: 1500000">
+                    </div>
+
+                    <label class="checkbox-field" for="project-completed">
+                        <input type="checkbox" id="project-completed" name="completed">
+                        Proyek sudah selesai
+                    </label>
+                </div>
+                <button type="submit" class="button button-primary">Tambah Proyek</button>
+                <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>Daftar Proyek</h2>
+            <div class="toolbar">
+                <div class="form-field search-field">
+                    <label for="project-search">Cari proyek berdasarkan nama</label>
+                    <input type="search" id="project-search" placeholder="Ketik nama proyek...">
+                </div>
+                <div class="form-field">
+                    <label for="category-filter">Filter kategori</label>
+                    <select id="category-filter">
+                        <option value="Semua">Semua kategori</option>
+                        <option value="Web App">Web App</option>
+                        <option value="Mobile App">Mobile App</option>
+                        <option value="Desktop App">Desktop App</option>
+                        <option value="UI/UX Design">UI/UX Design</option>
+                    </select>
+                </div>
+            </div>
+            <div id="project-list" class="project-list" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Teknik Informatika ITG</p>
+    </footer>
+</body>
+</html>

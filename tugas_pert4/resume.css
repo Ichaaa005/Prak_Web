@@ -1,0 +1,36 @@
+/* =========================
+   Body
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4ee;
+    color: #342c28;
+    line-height: 1.6;
+    max-width: 900px;
+}
+
+/* =========================
+   Header
+========================= */
+body > header {
+    background-color: #3d2c29;
+    padding: 25px 20px;
+    border-bottom: 4px solid #c99a55;
+}
+
+.title{
+    border-bottom: 2px solid #c99a55;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+    margin-top: 40px;
+    padding: 25px 20px;
+    background-color: #3d2c29;
+    border-top: 3px solid #c99a55;
+    text-align: center;
+    color: #f0d6a8;
+    font-size: 14px;
+}
