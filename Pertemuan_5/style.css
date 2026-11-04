@@ -39,3 +39,32 @@ pointer; font-weight: bold;
 .complete-btn:hover { background-color: #15803d; } 
 .delete-btn { background-color: #dc2626; color: white; } 
 .delete-btn:hover { background-color: #b91c1c; }
+
+/* Tampilan Task Counter */
+.task-summary {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+/* Tombol Bersihkan Tugas Selesai */
+.clear-btn {
+    width: 100%;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+}
+.clear-btn:hover {
+    background-color: #b91c1c;
+}
